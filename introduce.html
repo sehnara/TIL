@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="top">
+            <h1 class="name">강세훈</h1>
+            <h2 class="email">gsh723@naver.com</h2>
+            <h2 class="phone">010-5686-6201</h2>
+        </div>
+        
+        <div class="mid">
+            
+            <div class="experience">
+                <h2>경력사항 <span style="color: red;">*</span></h2>
+                <p>
+                    아르바이트 및 증빙이 불가능한 경력만 있을 경우[경력없음]을 체크해주세요. <br>
+                    인턴쉽 기재는 가능하나 경력으로 인정되지는 않습니다.
+                </p>
+
+                <input type="checkbox" name="experience" size="5" value="true" > 경력없음                
+                <input type="text" placeholder="회사명">
+                <input type="text" placeholder="입사일">
+                <input type="text" placeholder="퇴사일">
+                <select name="level" id="level">      
+                    <option value="">직원 유형</option>              
+                    <option value="level">정규직</option>
+                    <option value="level">계약직</option>
+                    <option value="level">파견직</option>
+                    <option value="level">인턴</option>
+                    <option value="level">기타</option>                    
+                </select>
+                <button>저장</button><br>
+                <input type="text" name="" id="" placeholder="직급"><br>
+                <input type="text" name="" id="" placeholder="담당업무">
+             </div>
+
+             <div class="history">
+                <h2>프로젝트 수행이력 <span style="color: red;">*</span></h2>
+                <p>
+                    프로젝트 수행이력이 없는 지원자는 [수행이력] 없음을 체크해주세요. 
+                    (프로젝트는 종류/분야의 제한이 없습니다.)
+                </p>
+                <input type="checkbox" name="" size="5" value="" > 수행이력 없음                             
+                <input type="text" placeholder="프로젝트명">
+                <input type="text" placeholder="시작일">
+                <input type="text" placeholder="종료일">
+                <select name="" id="">      
+                    <option value="">프로젝트 유형</option>              
+                    <option value="level">사내 프로젝트</option>
+                    <option value="level">외주</option>
+                    <option value="level">프리랜서</option>
+                    <option value="level">기타</option>                    
+                </select>
+                <button>저장</button><br>
+                <input type="text" name="" id="" placeholder="소속회사명"><br>
+                <input type="text" name="" id="" placeholder="주사용기술(서비스사업/스텝 직군은 본인의 주요 역할을 기입)"> <br>
+                <textarea name="" id="" cols="100" rows="10" placeholder="프로젝트에 대한 소개와 본인 수행한 역할을 상세히 작성해주세요.(1500자 이내)">                                      
+                </textarea>
+             </div>
+
+             <div class="military">
+                <h2>병역 정보 <span style="color: red;">*</span></h2>
+                <select name="" id="">      
+                    <option value="">병력구분</option>              
+                    <option value="level">병역필_현역(병)</option>
+                    <option value="level">병역필_현역(장교)</option>
+                    <option value="level">병역필_현역(부사관)</option>
+                    <option value="level">병역필_공익근무요원</option>   
+                    <option value="level">병역필_산업기능요원</option>
+                    <option value="level">병역필_전문연구요원</option>
+                    <option value="level">복무중(전직가능)_전문연구요원</option>
+                    <option value="level">병역면제</option>                  
+                    <option value="level">미필</option>                  
+                    <option value="level">해당없음</option>                  
+                </select>
+             </div>
+
+             <div class="introducemyself">
+                <h2>자기소개 <span style="color: red;">*</span></h2>
+                <textarea name="" id="" cols="100" rows="10" placeholder="프로젝트에 대한 소개와 본인 수행한 역할을 상세히 작성해주세요.(1500자 이내)">                                      
+                </textarea>
+
+             </div>
+
+             <div class="portfolio">
+                <h2>포트폴리오</h2>
+                <p>
+                    포트폴리오 파일은 1개만 첨부됩니다. 복수 파일을 올리실 경우 압축하여 올려주시길 바라며,<br>
+                    용량이 200MB보다 클 경우 클라우드 공유 URL 링크를 추가해주세요.
+                </p>
+                <input type="file"><br>
+                <div class="domain">
+                    <input type="text">
+                    <button>주소추가</button>
+                </div>
+             </div>
+
+             <div class="choochun">
+                <h2>추천인</h2>
+                <p>
+                    ID 입력 후 확인을 눌러주세요. 추천인 개인정보 보호를 위해 ID 확인은 3회까지 가능합니다.
+                </p>
+                <div class="choochunin">
+                    <input type="text">
+                    <button>추천인 추가</button>
+                    <button>추천인 삭제</button>
+                </div>
+             </div>
+
+             <br><br><hr><br><br>
+
+             <h2>개인정보 동의(선택)사항 입력 <span style="color: red;">*</span></h2>
+                <p>
+                    선택정보를 입력하지 않은 경우에도 지원서 제출이 가능합니다. 
+                    선택사항 입력을 원하시면 개인정보활용동의(선택)에 체크해주세요.
+                </p>
+                <input type="checkbox" name="experience" size="5" value="true" > 개인정보 동의(선택)사항 입력  
+            <div>
+                <h2>학력정보</h2>
+                <select name="" id="">      
+                    <option value="">학력</option>              
+                    <option value="level">고등학교</option>
+                    <option value="level">검정고시</option>
+                    <option value="level">사이버대학</option>
+                    <option value="level">대학교(2~3년제)</option>                    
+                    <option value="level">대학교(4년제 이상)</option>                    
+                    <option value="level">대학원(석사)</option>                    
+                    <option value="level">대학교(박사)</option>                    
+                </select>
+                <input type="text" name="" id="" placeholder="학교명">
+                <input type="text" name="" id="" placeholder="전공">
+                <input type="text" name="" id="" placeholder="평점/총점">
+                <input type="text" name="" id="" placeholder="입학연월">
+                <input type="text" name="" id="" placeholder="졸업연월">
+                <select name="" id="">      
+                    <option value="">졸업상태</option>              
+                    <option value="level">졸업</option>
+                    <option value="level">중퇴</option>
+                    <option value="level">휴학</option>
+                    <option value="level">졸업예정</option>     
+                    <option value="level">재학</option>                    
+                </select>
+                <button>저장</button><br>
+            </div>
+
+            <div>
+                <h2>자격/수상</h2>
+                <select name="" id="">      
+                    <option value="">종류</option>              
+                    <option value="level">수상경력</option>
+                    <option value="level">자격증</option>                            
+                </select>
+                <input type="text" name="" id="" placeholder="시험명">
+                <input type="text" name="" id="" placeholder="주최기관">
+                <input type="text" name="" id="" placeholder="점수/급">
+                <input type="text" name="" id="" placeholder="취득일">                
+                <button>저장</button><br>
+            </div>
+
+            <div>
+                <h2>어학</h2>
+                <select name="" id="">      
+                    <option value="">언어</option>              
+                    <option value="level">영어</option>
+                    <option value="level">일본어</option>
+                    <option value="level">중국어</option>
+                    <option value="level">스페인어</option> 
+                    <option value="level">직접입력</option>                    
+                </select>
+                <input type="text" name="" id="" placeholder="시험명">
+                <input type="text" name="" id="" placeholder="주최기관">
+                <input type="text" name="" id="" placeholder="점수/급">
+                <input type="text" name="" id="" placeholder="취득일">                
+                <button>저장</button><br>
+            </div>
+                
+            <div>
+                <h2>보훈대상&nbsp;&nbsp;&nbsp;장애대상</h2>
+                <input type="checkbox" name="experience" size="5" value="true" > 민감정보 활용 동의  <br>
+                <select name="" id="">      
+                    <option value="">미대상</option>              
+                    <option value="">대상</option>                                                     
+                </select> 
+                <select name="" id="">      
+                    <option value="">미대상</option>              
+                    <option value="">대상</option>                                                     
+                </select> 
+                <input type="text" placeholder="등급">
+                <button>저장</button><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h2> 지원서가 카카오 상시 영입에 활용될 수 있도록 등록하시겠습니까? </h2>
+                <form action="">
+                    <input type="checkbox" name="experience" size="5" value="true" >상시 영업 활용 동의(선택) 
+                </form>                               
+            </div>
+            <hr>
+        </div>        
+        
+        <div class="bot" style="display: flex; justify-content: center;">
+            <button>
+                미리보기
+            </button>
+            <button>
+                작성완료
+            </button>
+        </div>
+    </body>
+</html>
