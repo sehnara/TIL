@@ -1,0 +1,48 @@
+/* 1. 속성선택자 */
+a[href] {
+  color: blue;
+}
+a[href = "https://www.google.co.kr/"]
+{
+  color: tomato;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+form > input[type="text"] {
+  border: blue solid 2px;
+}
+
+/* 2. 링크선택자 */
+a[href = "https://www.kakaocorp.com/"]:link::after
+{
+  content: "-" attr(href);
+}
+
+/* 3. 부정선택자 */
+
+form :not(a) {
+  background-color: yellow;
+}
+
+/* 4. 문자선택자 */
+h6::first-line {
+  font-size: 50px;
+  font-weight: lighter;
+}
+h6::first-letter {
+  font-size: 80px;
+  font-weight: bold;
+}
+body a {
+  font-weight: bold;
+}
+h6:hover {
+  background-color: red;
+}
+input:focus {
+  border-radius: 7px;
+  border: tomato 3px solid;
+  width: 300px;
+  height: 60px;
+}
