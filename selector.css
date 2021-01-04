@@ -46,3 +46,51 @@ input:focus {
   width: 300px;
   height: 60px;
 }
+
+div:nth-child(1) {
+  font-size: 80px;
+}
+div:nth-child(2) {
+  font-size: 5em;
+  /* display: none; */
+  visibility: visible;
+  width: 1100px;
+  height: 300px;
+  opacity: 0.7;
+}
+div:nth-child(3) {
+  font-size: 500%;
+  opacity: 0.5;
+}
+
+#ddd {
+  /* position: relative; */
+}
+#square {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+
+  animation-name: ani1;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes ani1 {
+  from {
+    left: 0px;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 500px;
+    top: 610px;
+    transform: rotate(360deg);
+  }
+}
