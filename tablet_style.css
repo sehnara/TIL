@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* header */
+.header {
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  background-color: darkmagenta;
+
+  font-size: 32px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* body */
+.body {
+  display: flex;
+}
+/* 1. nav */
+.nav {
+  float: left;
+  width: 15em;
+  background-color: sandybrown;
+}
+.nav ul {
+  width: 15em;
+  height: 100%;
+}
+.nav ul li {
+  display: block;
+  height: 40px;
+  border-bottom: dashed gray 1px;
+  line-height: 40px;
+  color: darkmagenta;
+
+  padding-left: 10px;
+}
+
+/* 2. section */
+.section {
+  background-color: blanchedalmond;
+  float: left;
+
+  margin-right: -15em;
+  padding: 20px;
+  padding-right: 270px;
+}
+.sec_2,
+.sec_3 {
+  padding: 20px 0;
+}
+.sec_1 > h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.sec_1 > .mid > .image {
+  float: left;
+  padding-right: 20px;
+}
+.sec_1 > .mid > .contents::first-letter {
+  font-size: 32px;
+  color: chocolate;
+}
+.sec_1 > .mid > .contents::first-line {
+  font-size: 24px;
+  color: chocolate;
+}
+
+.sec_2 > h3 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.sec_2 > .mid > .image {
+  float: right;
+  padding-left: 20px;
+}
+.sec_2 > .mid > .contents::first-letter {
+  font-size: 32px;
+  color: chocolate;
+}
+.sec_2 > .mid > .contents::first-line {
+  font-size: 24px;
+  color: chocolate;
+}
+
+.sec_3 > h3 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+.sec_3 > .mid > .contents::first-letter {
+  font-size: 32px;
+  color: chocolate;
+}
+.sec_3 > .mid > .contents::first-line {
+  font-size: 24px;
+  color: chocolate;
+}
+
+.footer {
+  background-color: darkmagenta;
+
+  height: 4em;
+  line-height: 4em;
+  font-size: 32px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+
+  padding-right: 10px;
+}
+
+.sec_4 {
+  border-bottom: dashed 5px gray;
+  border-top: dashed 5px gray;
+  padding: 20px 0px;
+}
+.sec_4 > div > ul > li {
+  float: left;
+  padding-right: 10px;
+}
+
+.sec_4 > .contents::first-letter {
+  font-size: 32px;
+  color: chocolate;
+}
+.sec_4 > .contents::first-line {
+  font-size: 24px;
+  color: chocolate;
+}

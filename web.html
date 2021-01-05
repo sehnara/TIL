@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style>
+            /* 모바일 */
+            @media screen and (max-width: 767px){
+                #wrap{
+                    background-color: #ff0000;
+                    color: white;                    
+                }
+            }
+            /* 태블릿 */
+            @media screen and (min-width: 768px) and (max-width: 959px){
+                #wrap{
+                    background-color: green;
+                    color: white;                    
+                }
+            }
+            /* PC */
+            @media screen and (min-width: 960px){
+                #wrap{
+                    background-color: blue;
+                    color: white;                    
+                }
+            }
+
+            #wrap{
+                width: 80%;
+                border: 1px solid #cccccc;
+                margin: 0 auto;
+            }
+            #header{
+                width: 100%;
+                border: solid 1px #cccccc;
+            }
+            #section{
+                width: 100%;
+                border: solid 1px #cccccc;
+            }
+            #footer{
+                width: 100%;
+                border: solid 1px #cccccc;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="header">
+                header
+            </div>
+            <div id="section">
+                section
+            </div>
+            <div id="footer">
+                footer
+            </div>
+        </div>
+    </body>
+</html>
