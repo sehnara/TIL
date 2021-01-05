@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="content="width=device-width, initial-scale = 1.0, use-scalable=no"> -->
+
+         <style>
+             *{
+                 margin: 0; padding: 0;
+                 list-style: none;
+                 box-sizing:border-box;
+                
+             }
+             #wrap   {
+                 width: 80%;
+                 height: 100px;
+                 line-height: 100px;
+                 margin: 0% auto;
+
+                 
+            }
+            #log{
+                font-size: 30px;
+                 font-weight: bold;
+                 text-align: center;                
+                 border: 3px solid gainsboro;
+            }
+            .nav{
+                width: 100%;                                        
+            }           
+            
+            .nav ul li {
+                float: left;
+                width: 20%;
+                height: 30px;
+                line-height: 30px;
+
+                text-align: center;
+                color: white;
+                background-color: gray;                
+                border:2px blue solid;
+            }
+            section{
+                width: 100%;
+                overflow: hidden;
+                background-color: green;
+            }
+
+            section article{
+                width:  70%;                
+                float: left; 
+            }
+            section article :nth-child(1){
+                text-align: center;                
+                border-bottom: white 1px solid;
+                height: 80px;
+                
+            }
+            section article :nth-child(2){ 
+                text-align: center;              
+                
+                height: 150px;                
+            }
+
+            section aside{
+                float : left;
+                width: 30%;                
+            }
+            section aside :nth-child(1){
+                box-sizing: border-box;
+                border: 1px solid #dddddd;                
+            }
+            section aside :nth-child(1) img{
+                max-width: 100%;
+            }
+            section aside :nth-child(2){
+                box-sizing: border-box;
+                border: 1px solid #dddddd;                
+            }
+            section aside :nth-child(2) img{
+                min-width: 100%;
+                max-width: 100%;
+            }
+          
+            footer div{
+                clear: both;                
+                background-color: red;
+
+                text-align: center;
+                height: 80px;
+            }
+
+         </style>   
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div id="log"> logo img</div>
+                <div class="nav">
+                    <ul>
+                        <li>lnb1</li>
+                        <li>lnb2</li>
+                        <li>lnb3</li>
+                        <li>lnb4</li>
+                        <li>lnb5</li>
+                    </ul>
+                </div>
+            </header>
+            <section>
+                <article>
+                    <div class="art_1">article1</div>
+                    <div class="art_2">article2</div>                    
+                </article>
+                <aside>
+                    <div class="asd_1"><img src="sehoon.jpg" alt="상생혁신센터"></div>
+                    <div class="asd_2"><img src="sehoon.jpg" alt="상생혁신센터"></div>
+                    <div class="asd_3"><img src="sehoon.jpg" alt="상생혁신센터"></div>                    
+                </aside>
+            </section>
+            <footer>
+                <div> footer</div>
+            </footer>
+        </div>
+    </body>
+</html>
