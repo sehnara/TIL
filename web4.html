@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, use-scalable=no">
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+
+                list-style: none;
+                text-decoration: none;
+            }  
+            /* header */
+            .topBar{ 
+                height: 40px;
+                background-color: #37474f;                               
+            }
+            .topBar div{                
+                width : 1000px; 
+                margin: 0% auto;
+            }
+            .topBar ul li {
+                float: left;
+                color: white;
+               
+                width: 100px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;        
+            }
+            .logo{
+                width: 1000px;
+                margin: 0% auto;
+            }
+
+            .logoImg{
+                width: 300px;
+                height: 150px;
+                line-height: 150px;
+                margin: 100px auto;
+                
+                text-align: center;
+                border: 1px #37474f solid;
+            }
+            .hits{
+                border: 1px solid #37474f;
+                border-radius: 7px;
+
+                width: 400px;
+                height: 40px;
+                line-height: 40px;
+                float: right;    
+                margin-bottom: 5px;            
+            }
+            .hits ul li  {                
+                float :left;
+                text-align: center;
+                width: 100px;                
+            }
+            .hits ul li:not(hit1){
+                box-sizing: border-box;
+                border-left: 1px solid #37474f ;
+            }
+           
+
+            /* nav */
+            .menu{
+                clear: both;
+                border-top: dashed 1px #37474f;
+                height: 35px;
+                line-height: 35px;
+            }
+            .menu ul {
+                width: 1000px;
+                margin: 0% auto;
+            }
+            .menu ul li{
+                float:left;
+                width:125px;
+                text-align: center;
+            }
+
+            hr{
+                clear: both;
+            }
+
+            /* section */
+            section div{
+                width: 1000px;
+                margin: 0px auto 10px auto;
+                box-sizing: border-box;
+                border: 1px solid  #37474f;                
+            }
+            .slide > div{
+              height: 500px;
+              line-height:500px;
+              text-align: center;
+              float : left
+            }
+            .slide :nth-child(1){
+                width: 60%;
+            }
+            .slide :nth-child(2){
+                width: 40%;
+            }
+            .hitProduct, .mdProduct{
+                clear: both;
+            }
+            .hitProduct > div,.mdProduct >div{       
+              width: 24%;       
+              height: 400px;
+              line-height:400px;
+              text-align: center;
+              float: left;  
+              margin-left : 7px  ;        
+            }
+        
+            .office{
+                clear: both;
+            }
+            .office > div{                  
+              height: 300px;              
+              float: left;  
+            }
+
+            .office :nth-child(1){
+                width: 20%;
+            }
+            .office :nth-child(2){
+                width: 50%;
+            }
+            .office :nth-child(3){
+                width: 30%;
+            }
+
+            /* footer */
+            footer{
+                width: 1000px;
+                margin: 0% auto;
+                clear: both;
+
+                background-color: #37474f;
+                height: 70px ;
+                line-height: 70px;
+                color: white;
+                text-align: center;
+            }
+
+        </style>            
+    </head>
+
+    <body>
+        <header>
+            <div class="topBar">
+                <div>
+                    <ul>
+                        <li>Login</li>
+                        <li>Join Us</li>
+                        <li>Wish List</li>
+                        <li>Cart</li>
+                        <li>Order</li>
+                        <li>Mypage</li>
+                        <li>Notice</li>
+                        <li>QnA</li>
+                        <li>Review</li>
+                        <li>Favorite</li>                    
+                    </ul>
+                </div>                
+            </div>
+            <div class="logo">
+                <div class="logoImg">logo</div>
+                <div class="hits">
+                    <ul>
+                        <li>hit1</li>
+                        <li>hit2</li>
+                        <li>hit3</li>
+                        <li>hit4</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                    <li>menu5</li>
+                    <li>menu6</li>
+                    <li>menu7</li>
+                    <li>menu8</li>                    
+                </ul>
+            </div>
+        </nav>  
+        <hr>      
+
+        <section>
+            <div class="slide">
+                <div>slide banner</div>
+                <div>slide banner</div>
+            </div>
+            <div class="hitProduct">
+                <div>hit product1</div>
+                <div>hit product2</div>
+                <div>hit product3</div>
+                <div>hit product4</div>
+            </div>
+            <div class="mdProduct">
+                <div>md product1</div>
+                <div>md product2</div>
+                <div>md product3</div>
+                <div>md product4</div>
+            </div>
+            <div class="office">
+                <div>office logo</div>
+                <div>office address</div>
+                <div>shopping info</div>
+            </div>
+        </section>
+
+        <footer>            
+                copyright          
+        </footer>
+    </body>
+</html>
