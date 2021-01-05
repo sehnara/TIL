@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, iitial-scale = 1.0, use-scalable=no">
+        
+        <style>
+            body{
+                width: 1000px;
+                margin: 0% auto;
+                border:#bdbdbd 1px solid;
+            }
+            header >div{
+                text-align: center;
+                height: 80px;
+                line-height: 80px;
+                font-size: 24px;
+            }
+            section {
+                border-top: #bdbdbd 1px solid;
+                border-bottom: #bdbdbd 1px solid;
+            }
+            footer{
+                text-align: center;                   
+                height: 80px;
+                line-height: 80px;
+            }
+            footer input[type]{
+                font-weight: bold;
+                font-size: 20px;                
+            }  
+            section table tr {
+                height: 60px;                
+            }    
+            section table tr td{
+                padding: 0% 5px;
+            }  
+            section input[type = "text"], input[type = "tel"], input[type = "password"], input[type = "button"],input[type="email"]{                
+                height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            section select{
+                height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .key {
+                background-color:#eeeeee;
+                width: 25%;
+                padding-left: 10px;
+            }           
+        </style>
+    </head>
+
+    <body>           
+        <form action="" method="POST">   
+            <header>
+                <div id="title">회원 가입</div>
+            </header>
+            
+            <section>
+                <table>
+                    <tr>
+                        <td class="key">아이디</td>
+                        <td><input type="text" name="id" id="id"></td>
+                    </tr>
+                    <tr>
+                        <td class="key">비밀번호</td>
+                        <td><input type="password" name="pw" id="pw"></td>
+                    </tr>
+                    <tr>
+                        <td class="key">비밀번호 확인</td>
+                        <td><input type="password" name="pwconf" id="pwconf"></td>
+                    </tr>
+                    <tr>
+                        <td class="key">전화번호</td>
+                        <td>
+                            <input type="tel">-<input type="tel">-<input type="tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">집주소</td>
+                        <td>
+                            <input type="text" name="houseAddr" id="houseAddr">
+                            <input type="button" value="우편번호 찾기"><br>
+                            <input type="text"><br>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">이메일</td>
+                        <td>
+                            <input type="email"> &nbsp;@ 
+                            <select name="emailAddr" id="">
+                                <option value="etx">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="github.com">github.com</option>
+                                <option value="yahoo.com">yahoo.com</option>
+                            </select>
+                        </td>                        
+                    </tr>
+                    <tr>
+                        <td class="key">직장주소</td>
+                        <td>
+                            <input type="text" name="houseAddr" id="houseAddr">
+                            <input type="button" value="우편번호 찾기"><br>
+                            <input type="text"><br>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">직장 전화번호</td>
+                        <td> 
+                            <select name="frontPhoneNum" id="">
+                                <option value="02">02</option>
+                                <option value="051">051</option>
+                                <option value="070">070</option>
+                                <option value="032">032</option>
+                                <option value="034">034</option>
+                                <option value="061">061</option>
+                                <option value="062">062</option>
+                                <option value="064">064</option>
+                                <option value="031">031</option>
+                                <option value="033">033</option>
+                            </select>
+                            <input type="tel">-<input type="tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">우편물 수령지</td>
+                        <td>
+                            <input type="radio" name="getPost" value="house" > 집주소로 수령
+                            <input type="radio" name="getPost" value="office"> 회사주소로 수령
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">결혼여부</td>
+                        <td>
+                            <input type="radio" name="marry" value="n" > 미혼
+                            <input type="radio" name="marry" value="y"> 기혼
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="key">관심사</td>
+                        <td>
+                            <input type="checkbox" name="hobby" value="economy"> 경제
+                            <input type="checkbox" name="hobby" value="culture"> 문화
+                            <input type="checkbox" name="hobby" value="politic"> 정치
+                            <input type="checkbox" name="hobby" value="PE"> 체육
+                            <input type="checkbox" name="hobby" value="diplomacy"> 외교                            
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            
+            <footer>
+                <input type="submit" value="회원가입" name="membership" > &nbsp;&nbsp;
+                <input type="reset" value="취소" name="exit">
+            </footer>
+        </form>    
+    </body>
+</html>
