@@ -15,21 +15,46 @@ function getFood(event){
     showFood(foods);        
 }
 
-function saveFood(food){    
-    foodArray.push(food);
+function saveFood(){        
     localStorage.setItem(foodkey, JSON.stringify(foodArray));
 }
 
 function showFood(food){
     const elem = document.createElement('li');
+    const content = document.createElement('span');
     const btnRem = document.createElement('button');
-    elem.innerHTML = food;
-    btnRem.innerHTML = 'X';
+    IDNum = foodArray.length+1;
 
-    toEatList.appendChild(elem);
-    toEatList.appendChild(btnRem);
-    
-    saveFood(food);
+    content.innerHTML = food;
+    btnRem.innerHTML = 'X';
+    btnRem.addEventListener('click',deleteFood);
+
+    elem.appendChild(content);
+    elem.appendChild(btnRem);
+    elem.id = IDNum;
+    toEatList.appendChild(elem);  
+    btnRem.classList.add('btnFix');
+    content.classList.add('contentFix');
+    elem.classList.add('listOrdering');  
+   
+    foodObj = {
+        food,
+        id : IDNum
+    };
+    foodArray.push(foodObj);
+    saveFood();
+}
+
+function deleteFood(event){
+    const btn = event.target;
+    const li = btn.parentNode;
+    toEatList.removeChild(li);
+
+    const renewal =  foodArray.filter(function(toEat){
+        return toEat.id !== JSON.parse(li.id);
+    })  
+    foodArray = renewal;
+    saveFood();
 }
 
 function init(){
@@ -38,7 +63,7 @@ function init(){
     if(localArray!==null){
         const parsedArray = JSON.parse(localArray);
         for (let i = 0; i < parsedArray.length; i++) {
-            showFood(parsedArray[i]);            
+            showFood(parsedArray[i].food);            
         }
     }
 }

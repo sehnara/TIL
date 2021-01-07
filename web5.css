@@ -7,21 +7,19 @@
 .header {
   height: 200px;
   box-sizing: border-box;
-  border: 1px solid gray;
 }
 /* section */
 .section {
   height: 269px;
   box-sizing: border-box;
-  border: 1px solid gray;
 }
 .section :nth-child(1) {
   float: left;
-  width: 25%;
+  width: 20%;
   height: 100%;
   box-sizing: border-box;
 
-  background-color: #003b8e;
+  /* background-color: #003b8e; */
   color: aliceblue;
 }
 .section :nth-child(2) {
@@ -36,12 +34,12 @@
   font-weight: bold;
   overflow: hidden;
 
-  background-color: #4fc2f7;
+  background-color: #003b8e;
   color: aliceblue;
 }
 .section :nth-child(3) {
   float: left;
-  width: 25%;
+  width: 30%;
   height: 100%;
   box-sizing: border-box;
 
@@ -50,8 +48,8 @@
   overflow: hidden;
   padding-left: 10px;
 
-  background-color: #003b8e;
-  color: aliceblue;
+  /* background-color: #003b8e; */
+  color: #003b8e;
 }
 #user {
   text-align: center;
@@ -73,10 +71,70 @@
 .footer {
   height: 500px;
   box-sizing: border-box;
-  border: 1px solid gray;
+}
+
+.query {
+  height: 50px;
+  line-height: 50px;
+
+  box-sizing: border-box;
+  padding-top: 50px;
+  /* background-color: ; */
+}
+.query > div {
+  float: left;
+  width: 50%;
+
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 20px;
+  font-size: 32px;
+}
+.query form {
+  width: 50%;
+  float: left;
+}
+.query form input {
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
 }
 
 /* etc */
 .showing {
   display: none;
+}
+.listOrdering {
+  clear: both;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  margin: 3px 0%;
+  margin-left: 50%;
+
+  text-align: center;
+}
+
+.btnFix {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 10px;
+
+  font-size: 20px;
+  color: azure;
+  border: none;
+  border-radius: 15px;
+  background-color: tomato;
+
+  vertical-align: super;
+}
+.contentFix {
+  font-size: 32px;
+  font-weight: bold;
+  /* color: ; */
 }
