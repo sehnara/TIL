@@ -5,22 +5,24 @@
 }
 /* info */
 .infoBar {
-  height: 80px;
-  background-color: chocolate;
+  height: 60px;
+  background-color: #003b8e;
 }
 #weather {
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   text-align: right;
-  border: black 1px solid;
   box-sizing: border-box;
+
+  color: aliceblue;
 }
 #geo {
-  height: 40px;
-  line-height: 40px;
+  height: 30px;
+  line-height: 30px;
   text-align: right;
-  border: black 1px solid;
   box-sizing: border-box;
+
+  color: aliceblue;
 }
 
 /* header */
@@ -157,4 +159,14 @@
   font-size: 32px;
   font-weight: bold;
   /* color: ; */
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
