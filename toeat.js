@@ -11,8 +11,9 @@ foodform.addEventListener("submit",getFood);
 
 function getFood(event){
     event.preventDefault();
-    const foods = foodinput.value;    
+    const foods = foodinput.value;       
     showFood(foods);        
+    foodinput.value = "";
 }
 
 function saveFood(){        

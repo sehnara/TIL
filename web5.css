@@ -3,6 +3,26 @@
   margin: 0%;
   list-style: none;
 }
+/* info */
+.infoBar {
+  height: 80px;
+  background-color: chocolate;
+}
+#weather {
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  border: black 1px solid;
+  box-sizing: border-box;
+}
+#geo {
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  border: black 1px solid;
+  box-sizing: border-box;
+}
+
 /* header */
 .header {
   height: 200px;
