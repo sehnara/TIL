@@ -1,9 +1,9 @@
-const form = document.querySelector("form");
 const user = document.querySelector("#user");
-const input = user.querySelector("input");
+const form = user.querySelector("form");
+const input = form.querySelector("input");
 const welcome = user.querySelector("#welcome");
 
-Name = "nameKey";
+nameKey = "Name";
 
 form.addEventListener('submit',getName);
 
@@ -15,16 +15,16 @@ function getName(event){
 }
 
 function saveName(name){
-    localStorage.setItem(Name,name);    
+    localStorage.setItem(nameKey,name);    
 }
 
 function showName(name){
-    input.classList.add('showing');
+    form.classList.add('showing');
     welcome.innerHTML = `${name}'s belly button`;
 }
 
-function init(){
-    const userName = localStorage.getItem(Name);
+function init(){    
+    const userName = localStorage.getItem(nameKey);
 
     if(userName!==null){
         showName(userName);
