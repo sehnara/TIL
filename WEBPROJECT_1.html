@@ -49,7 +49,7 @@
                 margin: 1em;
             }
             .contents img {
-                margin: 0% 2em;
+                margin: 0% auto;
                 border-radius: 7px;
                 border: 1px solid gray;
             }
@@ -93,8 +93,23 @@
                 cursor: pointer;
             }
             @media screen and (max-width : 900px){
-                .menu ul {
-                flex-direction: column;
+                .menu{
+                    background-color:#424242;                
+                    height: 12em;                  
+                }
+                .menu ul {                    
+                    text-align: center;
+                    flex-direction: column;
+                    height: 12em;                
+                }
+                li{
+                    color: whitesmoke;
+                    font-size: 1.5em;                    
+                    cursor: pointer;
+                    height: 2em;   
+                    line-height: 2em;  
+                    box-sizing: border-box;
+                    border: 1px solid gray;                         
                 }
                 .contents{
                 flex-direction: column;
