@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webProject</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport", content="width=device-width, initial-scale = 1.0">
+        <style>
+            * {
+                padding: 0%;
+                margin: 0%;
+                list-style: none;
+            }
+            .menu{
+                background-color:#424242;                
+                height: 5em;                  
+            }
+            .menu ul {
+                display: flex; 
+                justify-content: center;  
+                               
+                /* overflow: hidden;                   */
+                      
+                height: 5em;
+                line-height: 5em;
+                margin: 0% auto;                                                 
+            }
+            li{
+                color: whitesmoke;
+                font-size: 1.5em; 
+                padding: 0% 1.5em;  
+                cursor: pointer;             
+            }
+            
+            .mid{
+                padding: 1em;
+                padding-bottom: 2em;                
+                background-color: #eeeeee;
+            }
+            .title {
+                padding: 1em 0%;
+                text-align: center;
+
+                font-size: 2em;
+                font-weight: bold;
+            }
+            .contents{
+                display: flex;
+                justify-content: center;
+                margin: 1em;
+            }
+            .contents img {
+                margin: 0% 2em;
+                border-radius: 7px;
+                border: 1px solid gray;
+            }
+            .contents div{
+                margin: 0% 6em;
+                text-align: center;
+            }
+            .contents div :nth-child(1){
+                font-size: 1.25em;
+                margin : 2em 0% ;
+            }
+            .contents div :nth-child(2){
+                background-color: orange;
+                font-size: 1.25em;
+                color: whitesmoke;
+                width: 20em;
+                height: 3.5em; 
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            footer{
+                text-align: center;  
+                height: 10em;
+                padding: 1em; 
+                background-color: #37474f;             
+            }
+            footer section{
+                font-size: 1.25em;
+                color: whitesmoke;
+                padding-bottom: 0.5em;
+            }
+            footer input{
+                width: 50em;
+                height: 3em;
+                color: whitesmoke;
+                font-weight: bold;
+                background-color: orange;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            @media screen and (max-width : 900px){
+                .menu ul {
+                flex-direction: column;
+                }
+                .contents{
+                flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header class="menu">
+            <ul>
+                <li>The book series</li>
+                <li>Testimonials</li>
+                <li>The Author</li>
+                <li>Free resources</li>
+            </ul>
+        </header>
+        <section class="mid">
+            <header class="title">You dont Know JavaScript</header>
+            <div class = "contents">
+                <img src="1.jpg" alt="JavaScript Book">
+                <div>
+                    <section>Don't just drift through JavaScript <br><br><br>
+                             Understand how Javascript works     <br><br><br>
+                             Start your journey through the bumpy side of Javascript
+                    </section>
+                    <input type="button" value="ORDER YOUR COPY NOW" >
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section>
+                The first ebook in the book series is absolutley free.
+            </section>
+            <input type="button" value="FIND OUT MORE ABOUT THIS OFFER">
+        </footer>
+    </body>
+
+</html>
