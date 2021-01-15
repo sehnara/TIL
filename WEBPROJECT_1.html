@@ -10,6 +10,10 @@
                 margin: 0%;
                 list-style: none;
             }
+            a {
+                color: whitesmoke;
+                text-decoration: none;
+            }
             .menu{
                 background-color:#424242;                
                 height: 5em;                  
@@ -163,7 +167,7 @@
     <body>
         <header class="menu">
             <ul>
-                <li>The book series</li>
+                <li><a href="WEBPROJECT_2.html">The book series</a></li>
                 <li>Testimonials</li>
                 <li>The Author</li>
                 <li>Free resources</li>
@@ -193,17 +197,12 @@
     </body>
     <script>
         const contents = document.querySelector('.img');
-        const image = contents.querySelector('img');
-        let num=0;
+        const image = contents.querySelector('img');        
 
         image.addEventListener('mouseover', getHover);
 
-        function getHover(event){
-            if(num>0)return;
-            
-            alert('This is JavaScript!');
-            num++;
+        function getHover(event){           
+            alert('This is JavaScript!');           
         }
-    </script>
-
+    </script>  
 </html>
